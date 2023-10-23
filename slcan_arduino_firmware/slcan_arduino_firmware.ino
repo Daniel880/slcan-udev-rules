@@ -15,7 +15,7 @@ int g_ts_en = 0;
 void setup() {
   pinMode(LED_OPEN, OUTPUT);
   pinMode(LED_ERR, OUTPUT);
-  Serial.begin(2000000); // select from 115200,500000,1000000,2000000
+  Serial.begin(115200); // select from 115200,500000,1000000,2000000
   if (Canbus.init(g_can_speed)) {
     digitalWrite(LED_ERR, LOW);
   } else {
