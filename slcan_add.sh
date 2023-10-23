@@ -1,6 +1,6 @@
 #!/bin/sh
 
-/usr/bin/slcand -o -c -f -s8 /dev/ttyCAN$1 can$1
+/usr/bin/slcand -o -c -f -s5 -S 2000000 /dev/ttyCAN$1 can$1
 
 sleep 1
 
